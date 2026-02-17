@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentacion - NAXBI</title>
+    <meta name="description" content="Documentacion tecnica y guias de uso de NAXBI. Aprende a sacar el maximo provecho de la plataforma.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <div class="nav-logo-icon">N</div>
+                NAXBI
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#features">Funciones</a></li>
+                <li><a href="index.html#how">Como Funciona</a></li>
+                <li><a href="index.html#benefits">Beneficios</a></li>
+                <li><a href="index.html#modules">Modulos</a></li>
+                <li><a href="contacto.html" class="nav-cta">Solicitar Demo</a></li>
+            </ul>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========== PAGE HERO ========== -->
+    <section class="page-hero">
+        <h1>Documentacion</h1>
+        <p>Guias detalladas para aprovechar al maximo cada funcionalidad de NAXBI.</p>
+    </section>
+
+    <!-- ========== CONTENT ========== -->
+    <section class="page-content">
+        <div class="section-container">
+            <div class="docs-layout">
+                <aside class="docs-sidebar">
+                    <h3>Contenido</h3>
+                    <ul>
+                        <li><a href="#inicio-rapido" class="active">Inicio Rapido</a></li>
+                        <li><a href="#paquetes">Gestion de Paquetes</a></li>
+                        <li><a href="#reservas">Motor de Reservas</a></li>
+                        <li><a href="#clientes">Gestion de Clientes</a></li>
+                        <li><a href="#pagos">Control de Pagos</a></li>
+                        <li><a href="#sitio-web">Sitio Web</a></li>
+                        <li><a href="#dashboard">Dashboard</a></li>
+                        <li><a href="#configuracion">Configuracion</a></li>
+                    </ul>
+                </aside>
+
+                <div class="docs-content">
+                    <h2 id="inicio-rapido">Inicio Rapido</h2>
+                    <p>Bienvenido a NAXBI. Esta guia te ayudara a configurar tu cuenta y comenzar a gestionar tu agencia en pocos minutos.</p>
+
+                    <h3>1. Configuracion inicial</h3>
+                    <p>Al ingresar por primera vez, el asistente de configuracion te guiara para completar los datos basicos de tu agencia: nombre, logo, informacion de contacto y moneda de operacion.</p>
+
+                    <h3>2. Estructura de tu catalogo</h3>
+                    <p>Antes de cargar paquetes, te recomendamos configurar las categorias y destinos que utiliza tu agencia. Esto facilitara la organizacion y busqueda posterior.</p>
+                    <p>Navega a <code>Configuracion > Categorias</code> para definir tipos de viaje como "Playa", "Aventura", "Cultural", etc.</p>
+
+                    <h3>3. Tu primer paquete</h3>
+                    <p>Dirígete a <code>Paquetes > Nuevo Paquete</code> y completa la informacion basica: nombre, destino, descripcion, precio y fechas de salida.</p>
+
+                    <h2 id="paquetes">Gestion de Paquetes</h2>
+                    <p>El modulo de paquetes es el corazon de NAXBI. Aqui administras toda tu oferta turistica.</p>
+
+                    <h3>Crear un paquete</h3>
+                    <p>Cada paquete puede incluir:</p>
+                    <ul>
+                        <li>Informacion general (nombre, destino, categoria, descripcion)</li>
+                        <li>Itinerario dia a dia con actividades detalladas</li>
+                        <li>Galeria de imagenes</li>
+                        <li>Hoteles y alojamientos incluidos</li>
+                        <li>Precios por temporada y tipo de habitacion</li>
+                        <li>Fechas de salida programadas</li>
+                        <li>Excursiones y actividades opcionales</li>
+                    </ul>
+
+                    <h3>Estados de un paquete</h3>
+                    <p>Los paquetes pueden estar en los siguientes estados:</p>
+                    <ul>
+                        <li><strong>Borrador:</strong> En proceso de edicion, no visible al publico</li>
+                        <li><strong>Activo:</strong> Publicado y disponible para reservas</li>
+                        <li><strong>Pausado:</strong> Temporalmente no disponible</li>
+                        <li><strong>Finalizado:</strong> Ya no se ofrecen nuevas fechas</li>
+                    </ul>
+
+                    <h2 id="reservas">Motor de Reservas</h2>
+                    <p>Gestiona el ciclo completo de una reserva desde la consulta hasta la finalizacion del viaje.</p>
+
+                    <h3>Flujo de una reserva</h3>
+                    <p>El proceso tipico de una reserva sigue estos pasos:</p>
+                    <ol>
+                        <li>El cliente consulta por un paquete (web, WhatsApp o presencial)</li>
+                        <li>Se crea la reserva con los datos del pasajero</li>
+                        <li>Se registra la sena o pago inicial</li>
+                        <li>Se da seguimiento a los pagos pendientes</li>
+                        <li>Se confirma la reserva cuando esta completamente paga</li>
+                        <li>Se genera la documentacion del viaje</li>
+                    </ol>
+
+                    <h3>Estados de reserva</h3>
+                    <ul>
+                        <li><code>Pendiente</code> - Reserva creada, esperando pago</li>
+                        <li><code>Confirmada</code> - Pago completo recibido</li>
+                        <li><code>En curso</code> - El viaje esta en progreso</li>
+                        <li><code>Completada</code> - Viaje finalizado</li>
+                        <li><code>Cancelada</code> - Reserva cancelada</li>
+                    </ul>
+
+                    <h2 id="clientes">Gestion de Clientes</h2>
+                    <p>Mantiene una base de datos completa de todos tus clientes con su historial de viajes y preferencias.</p>
+
+                    <h3>Perfil del cliente</h3>
+                    <p>Cada cliente tiene un perfil que incluye datos de contacto, documentos de viaje, historial de reservas, preferencias y notas internas del equipo.</p>
+
+                    <h2 id="pagos">Control de Pagos</h2>
+                    <p>Registra y da seguimiento a todos los movimientos financieros de tus reservas.</p>
+
+                    <h3>Tipos de pago</h3>
+                    <ul>
+                        <li><strong>Sena:</strong> Pago parcial para asegurar la reserva</li>
+                        <li><strong>Cuota:</strong> Pago parcial programado</li>
+                        <li><strong>Pago total:</strong> Pago completo en una sola operacion</li>
+                    </ul>
+
+                    <h2 id="sitio-web">Sitio Web</h2>
+                    <p>NAXBI genera automaticamente un sitio web profesional con tu catalogo de paquetes actualizado en tiempo real.</p>
+
+                    <h3>Personalizacion</h3>
+                    <p>Desde <code>Configuracion > Sitio Web</code> puedes personalizar colores, logo, informacion de contacto y textos de tu sitio publico.</p>
+
+                    <h2 id="dashboard">Dashboard</h2>
+                    <p>El dashboard ofrece una vision completa del rendimiento de tu agencia con metricas clave.</p>
+
+                    <h3>Metricas disponibles</h3>
+                    <ul>
+                        <li>Ventas totales y por periodo</li>
+                        <li>Reservas por estado</li>
+                        <li>Paquetes mas vendidos</li>
+                        <li>Tasa de conversion</li>
+                        <li>Clientes nuevos vs recurrentes</li>
+                        <li>Pagos pendientes</li>
+                    </ul>
+
+                    <h2 id="configuracion">Configuracion</h2>
+                    <p>Personaliza NAXBI segun las necesidades de tu agencia.</p>
+
+                    <h3>Opciones de configuracion</h3>
+                    <ul>
+                        <li><strong>Datos de la agencia:</strong> Nombre, logo, direccion, contacto</li>
+                        <li><strong>Usuarios y roles:</strong> Administrar accesos del equipo</li>
+                        <li><strong>Categorias:</strong> Tipos de viaje y destinos</li>
+                        <li><strong>Moneda:</strong> Moneda principal de operacion</li>
+                        <li><strong>Notificaciones:</strong> Configurar alertas automaticas</li>
+                        <li><strong>Sitio web:</strong> Apariencia y contenido del sitio publico</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>NAXBI</h3>
+                    <p>Sistema Integral de Gestion para Agencias de Viajes. La plataforma que centraliza y potencia tu operacion turistica.</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/naxbi.com.ar/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>                 
+                        <a href="https://www.linkedin.com/company/naxbi-system/about/?viewAsMember=true" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>                         
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Producto</h4>
+                    <ul>
+                        <li><a href="index.html#features">Funcionalidades</a></li>
+                        <li><a href="index.html#modules">Modulos</a></li>
+                        <li><a href="index.html#how">Como funciona</a></li>
+                        <li><a href="index.html#benefits">Beneficios</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="casos-de-exito.html">Casos de exito</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Soporte</h4>
+                    <ul>
+                        <li><a href="centro-de-ayuda.html">Centro de ayuda</a></li>
+                        <li><a href="documentacion.html">Documentacion</a></li>
+                        <li><a href="terminos-y-condiciones.html">Terminos y condiciones</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>
+                    &copy; 2026 NAXBI. Todos los derechos reservados | 
+                    Power by 
+                    <a href="https://clickeame.net" target="_blank" class="link-naxbi">clickeame.net</a>
+                </span>
+
+                <span>
+                    Hecho con 
+                    <i class="fas fa-heart" style="color: var(--primary-light);"></i> 
+                    para agencias de viajes
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

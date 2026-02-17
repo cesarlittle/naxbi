@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAXBI - Sistema Integral de Gestion para Agencias de Viajes</title>
+    <meta name="description" content="NAXBI es la plataforma todo-en-uno para gestionar tu agencia de viajes. Paquetes, reservas, clientes, pagos y mas en un solo lugar.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Favicon estándar -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <!-- Para Apple -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <!-- Android / Chrome -->
+    <link rel="manifest" href="/site.webmanifest">
+    <!-- Color de la barra en mobile -->
+    <meta name="theme-color" content="#0f172a">
+
+</head>
+<body>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <div class="nav-logo-icon">N</div>
+                NAXBI
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#features">Funciones</a></li>
+                <li><a href="#how">Como Funciona</a></li>
+                <li><a href="#benefits">Beneficios</a></li>
+                <li><a href="#modules">Modulos</a></li>
+                <li><a href="#testimonials">Opiniones</a></li>
+                <li><a href="contacto.html" class="nav-cta">Solicitar Demo</a></li>
+            </ul>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <i class="fas fa-rocket"></i>
+                    Plataforma Todo-en-Uno
+                </div>
+                <h1>
+                    Gestiona tu agencia
+                    <span>de viajes sin limites</span>
+                </h1>
+                <p class="hero-description">
+                    NAXBI centraliza paquetes, reservas, clientes, pagos e itinerarios en una sola plataforma intuitiva. Automatiza procesos y enfocate en hacer crecer tu negocio.
+                </p>
+                <div class="hero-buttons">
+                    <a href="contacto.html" class="btn-primary">
+                        <i class="fas fa-play-circle"></i>
+                        Solicitar Demo
+                    </a>
+                    <a href="#features" class="btn-secondary">
+                        <i class="fas fa-arrow-down"></i>
+                        Conoce mas
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-mockup">
+                    <div class="mockup-header">
+                        <div class="mockup-dot"></div>
+                        <div class="mockup-dot"></div>
+                        <div class="mockup-dot"></div>
+                    </div>
+                    <div class="mockup-stats">
+                        <div class="mockup-stat">
+                            <div class="mockup-stat-value">248</div>
+                            <div class="mockup-stat-label">Reservas activas</div>
+                        </div>
+                        <div class="mockup-stat">
+                            <div class="mockup-stat-value">$85K</div>
+                            <div class="mockup-stat-label">Ventas del mes</div>
+                        </div>
+                        <div class="mockup-stat">
+                            <div class="mockup-stat-value">1.2K</div>
+                            <div class="mockup-stat-label">Clientes</div>
+                        </div>
+                        <div class="mockup-stat">
+                            <div class="mockup-stat-value">98%</div>
+                            <div class="mockup-stat-label">Satisfaccion</div>
+                        </div>
+                    </div>
+                    <div class="mockup-chart">
+                        <div class="chart-bar" style="height: 40%"></div>
+                        <div class="chart-bar" style="height: 65%"></div>
+                        <div class="chart-bar" style="height: 45%"></div>
+                        <div class="chart-bar" style="height: 80%"></div>
+                        <div class="chart-bar" style="height: 55%"></div>
+                        <div class="chart-bar" style="height: 90%"></div>
+                        <div class="chart-bar" style="height: 70%"></div>
+                        <div class="chart-bar" style="height: 95%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== STATS BAR ========== -->
+    <div class="stats-bar">
+        <div class="stats-container reveal">
+            <div class="stat-item">
+                <div class="stat-number" data-count="+6300">0+</div>
+                <div class="stat-label">Cliente que reservaron en nuestro sistema</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-count="7400">0+</div>
+                <div class="stat-label">Reservas procesadas</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">99.9%</div>
+                <div class="stat-label">Uptime garantizado</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">Soporte disponible</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== FEATURES ========== -->
+    <section class="section" id="features">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <div class="section-label"><i class="fas fa-star"></i> Funcionalidades</div>
+                <h2 class="section-title">Todo lo que necesitas para operar tu agencia</h2>
+                <p class="section-subtitle">Herramientas profesionales disenadas especificamente para el sector turismo. Sin complicaciones, sin curva de aprendizaje.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><i class="fas fa-suitcase-rolling"></i></div>
+                    <h3>Gestion de Paquetes</h3>
+                    <p>Crea y administra paquetes turisticos con itinerarios detallados, galerias de imagenes, precios por temporada y fechas de salida.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><i class="fas fa-calendar-check"></i></div>
+                    <h3>Reservas Inteligentes</h3>
+                    <p>Sistema de reservas con seguimiento de estado, comprobantes de pago, datos de pasajeros y notificaciones automaticas.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><i class="fas fa-users"></i></div>
+                    <h3>Gestion de Clientes</h3>
+                    <p>Base de datos centralizada con preferencias y comunicaciones para ofrecer un servicio personalizado.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Dashboard Analitico</h3>
+                    <p>Metricas en tiempo real de ventas, reservas, conversion y rendimiento. Toma decisiones basadas en datos concretos.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><i class="fas fa-globe-americas"></i></div>
+                    <h3>Sitio Web Integrado</h3>
+                    <p>Tu catalogo de paquetes publicado automaticamente en un sitio web moderno, responsive y optimizado para convertir visitantes en clientes.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><i class="fas fa-hiking"></i></div>
+                    <h3>Excursiones y Actividades</h3>
+                    <p>Gestiona actividades complementarias, excursiones opcionales y experiencias que enriquecen cada paquete turistico.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== HOW IT WORKS ========== -->
+    <section class="section how-section" id="how">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <div class="section-label"><i class="fas fa-cogs"></i> Como Funciona</div>
+                <h2 class="section-title">Listo para operar en minutos</h2>
+                <p class="section-subtitle">Sin instalaciones complicadas. Accede desde cualquier dispositivo con internet y comienza a gestionar tu agencia al instante.</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card reveal">
+                    <div class="step-number">1</div>
+                    <h3>Configura tu Agencia</h3>
+                    <p>Personaliza el sistema con tu marca, destinos, proveedores y estructura de precios. En pocos clics tu plataforma esta lista.</p>
+                </div>
+                <div class="step-card reveal">
+                    <div class="step-number">2</div>
+                    <h3>Carga tus Paquetes</h3>
+                    <p>Agrega paquetes con itinerarios, imagenes, hoteles, fechas y precios. Se publican automaticamente en tu sitio web.</p>
+                </div>
+                <div class="step-card reveal">
+                    <div class="step-number">3</div>
+                    <h3>Gestiona y Crece</h3>
+                    <p>Recibe reservas, administra pagos, da seguimiento a clientes y analiza el rendimiento de tu negocio desde el dashboard.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== BENEFITS ========== -->
+    <section class="section" id="benefits">
+        <div class="section-container">
+            <div class="benefits-layout">
+                <div class="benefits-image reveal">
+                    <div class="benefits-dashboard">
+                        <div class="benefits-card-float">
+                            <div class="float-icon"><i class="fas fa-chart-pie"></i></div>
+                            <div class="float-text">
+                                <h4>Ventas del Mes</h4>
+                                <p>+32% respecto al mes anterior</p>
+                            </div>
+                        </div>
+                        <div class="benefits-card-float">
+                            <div class="float-icon"><i class="fas fa-plane-departure"></i></div>
+                            <div class="float-text">
+                                <h4>45 Salidas Programadas</h4>
+                                <p>Proximos 30 dias</p>
+                            </div>
+                        </div>
+                        <div class="benefits-card-float">
+                            <div class="float-icon"><i class="fas fa-bell"></i></div>
+                            <div class="float-text">
+                                <h4>12 Reservas Nuevas</h4>
+                                <p>Pendientes de confirmacion</p>
+                            </div>
+                        </div>
+                        <div class="benefits-card-float">
+                            <div class="float-icon"><i class="fas fa-star"></i></div>
+                            <div class="float-text">
+                                <h4>4.9 Satisfaccion</h4>
+                                <p>Promedio de clientes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal">
+                    <div class="section-label"><i class="fas fa-trophy"></i> Beneficios</div>
+                    <h2 class="section-title" style="text-align:left; margin-bottom: 16px;">Por que elegir NAXBI</h2>
+                    <p class="section-subtitle" style="text-align:left; margin-bottom: 36px;">Disenado por expertos en turismo para resolver los desafios reales de las agencias de viajes.</p>
+                    <ul class="benefits-list">
+                        <li class="benefit-item">
+                            <div class="benefit-check"><i class="fas fa-check"></i></div>
+                            <div>
+                                <h4>Ahorra tiempo operativo</h4>
+                                <p>Automatiza tareas repetitivas como cotizaciones, seguimiento de pagos y actualizacion de disponibilidad.</p>
+                            </div>
+                        </li>
+                        <li class="benefit-item">
+                            <div class="benefit-check"><i class="fas fa-check"></i></div>
+                            <div>
+                                <h4>Todo centralizado</h4>
+                                <p>Sin planillas dispersas ni multiples herramientas. Paquetes, clientes, reservas y finanzas en un solo lugar.</p>
+                            </div>
+                        </li>
+                        <li class="benefit-item">
+                            <div class="benefit-check"><i class="fas fa-check"></i></div>
+                            <div>
+                                <h4>Presencia online profesional</h4>
+                                <p>Tu sitio web siempre actualizado con tu catalogo, generando consultas y reservas las 24 horas.</p>
+                            </div>
+                        </li>
+                        <li class="benefit-item">
+                            <div class="benefit-check"><i class="fas fa-check"></i></div>
+                            <div>
+                                <h4>Escalable y seguro</h4>
+                                <p>Crece sin preocuparte por la infraestructura. Tus datos estan protegidos con los mas altos estandares.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== MODULES ========== -->
+    <section class="section modules-section" id="modules">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <div class="section-label"><i class="fas fa-th-large"></i> Modulos</div>
+                <h2 class="section-title">Una plataforma, multiples soluciones</h2>
+                <p class="section-subtitle">Cada modulo esta disenado para cubrir un area clave de la operacion de tu agencia.</p>
+            </div>
+            <div class="modules-grid">
+                <div class="module-card reveal">
+                    <div class="module-icon"><i class="fas fa-box-open"></i></div>
+                    <div>
+                        <h3>Catalogo de Paquetes</h3>
+                        <p>Administra tu oferta turistica completa con descripciones, imagenes, itinerarios dia a dia, hoteles y precios por temporada.</p>
+                    </div>
+                </div>
+                <div class="module-card reveal">
+                    <div class="module-icon"><i class="fas fa-clipboard-list"></i></div>
+                    <div>
+                        <h3>Motor de Reservas</h3>
+                        <p>Recibe y gestiona reservas con control de estados, datos de pasajeros, comprobantes y seguimiento.</p>
+                    </div>
+                </div>
+                <div class="module-card reveal">
+                    <div class="module-icon"><i class="fas fa-wallet"></i></div>
+                    <div>
+                        <h3>Control de Pagos</h3>
+                        <p>Seguimiento de señas, cuotas y pagos completos. Visualiza el estado financiero de cada reserva al instante.</p>
+                    </div>
+                </div>
+                <div class="module-card reveal">
+                    <div class="module-icon"><i class="fas fa-images"></i></div>
+                    <div>
+                        <h3>Galeria Multimedia</h3>
+                        <p>Biblioteca centralizada de imagenes y recursos visuales para utilizar en tus paquetes y comunicaciones.</p>
+                    </div>
+                </div>
+                <div class="module-card reveal">
+                    <div class="module-icon"><i class="fas fa-tags"></i></div>
+                    <div>
+                        <h3>Ofertas y Promociones</h3>
+                        <p>Destaca paquetes con etiquetas como Hot Sale, Cyber Monday, Last Minute y 2x1 entre muchos más para impulsar ventas.</p>
+                    </div>
+                </div>
+                <div class="module-card reveal">
+                    <div class="module-icon"><i class="fas fa-sitemap"></i></div>
+                    <div>
+                        <h3>Categorias y Destinos</h3>
+                        <p>Organiza tu catalogo por tipo de viaje, destino, temporada y mas para facilitar la busqueda de tus clientes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS ========== -->
+    <section class="section" id="testimonials">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <div class="section-label"><i class="fas fa-comments"></i> Testimonios</div>
+                <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+                <p class="section-subtitle">Agencias de viajes que transformaron su operacion con NAXBI.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <blockquote>"Antes manejabamos todo con planillas y WhatsApp. Desde que implementamos NAXBI, el orden y la profesionalidad de nuestra agencia cambiaron por completo."</blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">ZP</div>
+                        <div>
+                            <div class="testimonial-name">Zaymar Parra</div>
+                            <div class="testimonial-role">Jefa de Europa, Viajoplus</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <blockquote>"El dashboard nos permitio entender cuales son nuestros paquetes estrella y en que meses vendemos mas. Ahora planificamos con datos reales."</blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">GR</div>
+                        <div>
+                            <div class="testimonial-name">Gabriela </div>
+                            <div class="testimonial-role">Fundadora, Fantastic Travel</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <blockquote>"Nuestro sitio web ahora muestra los paquetes actualizados automaticamente. Los clientes reservan a cualquier hora y nosotros solo gestionamos."</blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">TP</div>
+                        <div>
+                            <div class="testimonial-name">Tamara Peralta</div>
+                            <div class="testimonial-role">Jefa de Producto, Eurovips</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CTA ========== -->
+    <section class="cta-section" id="contact">
+        <div class="cta-content reveal">
+            <h2>Lleva tu agencia al siguiente nivel</h2>
+            <p>Unete a las agencias que ya gestionan su operacion de forma inteligente. Solicita una demo personalizada y descubri todo lo que NAXBI puede hacer por tu negocio.</p>
+            <div class="cta-buttons">
+                <a href="contacto.html" class="btn-cta-primary">
+                    <i class="fas fa-envelope"></i>
+                    Solicitar Demo Gratis
+                </a>
+                <a href="https://wa.me/5491127601142" class="btn-cta-secondary">
+                    <i class="fab fa-whatsapp"></i>
+                    Escribinos por WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>NAXBI</h3>
+                    <p>Sistema Integral de Gestion para Agencias de Viajes. La plataforma que centraliza y potencia tu operacion turistica.</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/naxbi.com.ar/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>                 
+                        <a href="https://www.linkedin.com/company/naxbi-system/about/?viewAsMember=true" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>                         
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Producto</h4>
+                    <ul>
+                        <li><a href="index.html#features">Funcionalidades</a></li>
+                        <li><a href="index.html#modules">Modulos</a></li>
+                        <li><a href="index.html#how">Como funciona</a></li>
+                        <li><a href="index.html#benefits">Beneficios</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="casos-de-exito.html">Casos de exito</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Soporte</h4>
+                    <ul>
+                        <li><a href="centro-de-ayuda.html">Centro de ayuda</a></li>
+                        <li><a href="documentacion.html">Documentacion</a></li>
+                        <li><a href="terminos-y-condiciones.html">Terminos y condiciones</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>
+                    &copy; 2026 NAXBI. Todos los derechos reservados | 
+                    Power by 
+                    <a href="https://clickeame.net" target="_blank" class="link-naxbi">clickeame.net</a>
+                </span>
+
+                <span>
+                    Hecho con 
+                    <i class="fas fa-heart" style="color: var(--primary-light);"></i> 
+                    para agencias de viajes
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
