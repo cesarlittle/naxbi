@@ -1,15 +1,15 @@
 /* ============ VARIABLES ============ */
 :root {
-    --primary: #46A8A7;
+    --primary: #2F8F8E;
     --primary-dark: #1A3E63;
-    --primary-light: #84B6B3;
+    --primary-light: #5FAFAE;
     --primary-lighter: #BFE3E3;
     --white: #FDFEFE;
     --off-white: #F5F9F9;
     --gray-50: #EFF4F4;
     --gray-100: #DEE8E8;
     --gray-200: #C2D4D4;
-    --gray-500: #6B8A8A;
+    --gray-500: #4B6F6F;
     --gray-700: #2D4A4A;
     --gray-900: #1A2F2F;
     --gradient-main: linear-gradient(135deg, var(--primary-dark), var(--primary), var(--primary-light));
@@ -38,6 +38,14 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
 }
+a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  text-decoration: none;
+}
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
@@ -53,6 +61,8 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 1000;
     padding: 16px 0;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--gray-900);
+
 }
 
 .navbar.scrolled {
@@ -109,6 +119,8 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     gap: 32px;
     list-style: none;
+    color: var(--gray-900);
+
 }
 
 .nav-links a {
@@ -258,7 +270,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-description {
     font-size: 1.15rem;
-    color: rgba(255,255,255,0.85);
+    color: #ffffff;
     margin-bottom: 36px;
     max-width: 520px;
     line-height: 1.7;
@@ -915,7 +927,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .cta-section p {
     font-size: 1.1rem;
-    color: rgba(255,255,255,0.85);
+    color: #ffffff;
     margin-bottom: 36px;
     line-height: 1.7;
 }
@@ -932,8 +944,8 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     gap: 10px;
     padding: 18px 36px;
-    background: var(--white);
-    color: var(--primary-dark);
+    background: var(--primary-dark);
+    color: #ffffff;
     border-radius: 50px;
     font-weight: 700;
     font-size: 1.05rem;
@@ -1118,7 +1130,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .page-hero p {
     font-size: 1.15rem;
-    color: rgba(255,255,255,0.85);
+    color: #ffffff;
     max-width: 600px;
     margin: 0 auto;
     line-height: 1.7;
