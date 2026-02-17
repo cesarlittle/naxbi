@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NAXBI - Sistema Integral de Gestion para Agencias de Viajes</title>
     <meta name="description" content="NAXBI es la plataforma todo-en-uno para gestionar tu agencia de viajes. Paquetes, reservas, clientes, pagos y mas en un solo lugar.">
+    <link rel="preload" href="css/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/styles.css"></noscript>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -19,10 +21,14 @@
     <link rel="manifest" href="/site.webmanifest">
     <!-- Color de la barra en mobile -->
     <meta name="theme-color" content="#0f172a">
-
+    <style>
+    /* solo lo visible al cargar */
+    body{margin:0;font-family:sans-serif}
+    header{display:flex;align-items:center;justify-content:space-between}    
+    </style>
 </head>
 <body>
-
+    <main>
     <!-- ========== NAVBAR ========== -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
@@ -407,14 +413,14 @@
                     <i class="fas fa-envelope"></i>
                     Solicitar Demo Gratis
                 </a>
-                <a href="https://wa.me/5491127601142" class="btn-cta-secondary">
+                <a href="https://wa.me/5491127601142" class="btn-cta-secondary" aria-label="Escríbenos por WhatsApp">
                     <i class="fab fa-whatsapp"></i>
                     Escribinos por WhatsApp
                 </a>
             </div>
         </div>
     </section>
-
+    </main>
     <!-- ========== FOOTER ========== -->
     <footer class="footer">
         <div class="footer-container">
@@ -462,13 +468,15 @@
 
                 <span>
                     Hecho con 
-                    <i class="fas fa-heart" style="color: var(--primary-light);"></i> 
+                    <i class="fas fa-heart" style="color: var(--primary-light);" aria-hidden="true"></i>
+                    <span class="sr-only">amor</span>
                     para agencias de viajes
                 </span>
             </div>
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
+
 </body>
 </html>
