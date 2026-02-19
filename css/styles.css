@@ -193,6 +193,13 @@ h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
     padding: 120px 24px 80px;
 }
+.hero a {
+  text-decoration: underline;
+}
+
+.hero a:hover {
+  text-decoration: underline;
+}
 
 .hero::before {
     content: '';
@@ -1074,9 +1081,44 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-bottom a {
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+.footer-bottom a:hover,
+.footer-bottom a:focus-visible {
     color: var(--primary-light);
     text-decoration: none;
 }
+.footer-bottom a:focus-visible {
+    outline: 3px solid var(--primary-light);
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+.footer a {
+  text-decoration: underline;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+.footer-bottom .link-naxbi {
+  color: #ffffff;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.footer-bottom .link-naxbi:hover,
+.footer-bottom .link-naxbi:focus-visible {
+  color: var(--primary-light);
+  text-decoration: none;
+}
+.link-naxbi span {
+  text-decoration: inherit;
+}
+
+
 
 /* ============ ANIMATIONS ============ */
 @keyframes fadeInUp {
@@ -1705,6 +1747,15 @@ h1, h2, h3, h4, h5, h6 {
     .page-hero { padding: 120px 16px 60px; }
     .page-content { padding: 48px 16px; }
 }
+
+@media (max-width:768px){
+  .hero::before,
+  .hero::after,
+  .hero-visual {
+    display:none;
+  }
+}
+
 /*mensaje del formulario*/
 #formMsg {
   margin-top: 15px;
