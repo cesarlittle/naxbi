@@ -40,7 +40,7 @@ body {
     overflow-x: hidden;
 }
 a {
-  text-decoration: underline;
+  text-decoration: none;
   text-underline-offset: 3px;
 }
 
@@ -194,11 +194,11 @@ h1, h2, h3, h4, h5, h6 {
     padding: 120px 24px 80px;
 }
 .hero a {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .hero a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .hero::before {
@@ -1083,7 +1083,7 @@ h1, h2, h3, h4, h5, h6 {
 .footer-bottom a {
     color: #ffffff;
     font-weight: 600;
-    text-decoration: underline;
+    text-decoration: none;
     text-underline-offset: 3px;
 }
 .footer-bottom a:hover,
@@ -1097,15 +1097,15 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 4px;
 }
 .footer a {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .footer a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 .footer-bottom .link-naxbi {
   color: #ffffff;
-  text-decoration: underline;
+  text-decoration: none;
   font-weight: 600;
 }
 
@@ -1795,40 +1795,6 @@ a:hover {
   white-space: nowrap;
   border: 0;
 }
-
-@font-face {
-  font-family: 'Inter';
-  src: url('/fonts/inter-regular.woff2') format('woff2');
-  font-weight: 400;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Inter';
-  src: url('/fonts/inter-600.woff2') format('woff2');
-  font-weight: 600;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Inter';
-  src: url('/fonts/inter-700.woff2') format('woff2');
-  font-weight: 700;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Inter';
-  src: url('/fonts/plus-jakarta-sans-cyrillic-ext-600-normal.woff') format('woff2');
-  font-weight: 600;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Inter';
-  src: url('/fonts/plus-jakarta-sans-cyrillic-ext-700-normal.woff') format('woff2');
-  font-weight: 700;
-  font-display: swap;
 
 .hero {
   min-height: 100vh;
