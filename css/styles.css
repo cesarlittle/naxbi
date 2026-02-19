@@ -1,17 +1,18 @@
 /* ============ VARIABLES ============ */
 :root {
-    --primary: #2F8F8E;
-    --primary-dark: #1A3E63;
-    --primary-light: #5FAFAE;
-    --primary-lighter: #BFE3E3;
-    --white: #FDFEFE;
-    --off-white: #F5F9F9;
-    --gray-50: #EFF4F4;
-    --gray-100: #DEE8E8;
-    --gray-200: #C2D4D4;
-    --gray-500: #4B6F6F;
-    --gray-700: #2D4A4A;
-    --gray-900: #1A2F2F;
+    
+    --primary: #1f1fff;
+    --primary-dark: #00009a;
+    --primary-light: #6c6cfd;
+    --primary-lighter: #e6e6f7;
+    --white: #FDFDFD;
+    --off-white: #F5F5F5;
+    --gray-50:  #efefef;
+    --gray-100: #dedede;
+    --gray-200: #c2c2c2;
+    --gray-500: #4b4b4b;
+    --gray-700: #4D4D4D;
+    --gray-900: #1A1A1A;    
     --gradient-main: linear-gradient(135deg, var(--primary-dark), var(--primary), var(--primary-light));
     --gradient-soft: linear-gradient(135deg, var(--primary-dark), var(--primary));
     --gradient-accent: linear-gradient(135deg, var(--primary), var(--primary-light));
